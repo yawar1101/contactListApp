@@ -1,4 +1,5 @@
 import os
+import django_on_heroku
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -133,3 +134,5 @@ JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+django_on_heroku.settings(locals())

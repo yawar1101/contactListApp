@@ -9,8 +9,14 @@ djangorestframework = "*"
 pyjwt = "*"
 python-dotenv = "*"
 drf-yasg = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.10"
+
+[pipenv]
+allow_prereleases = true
